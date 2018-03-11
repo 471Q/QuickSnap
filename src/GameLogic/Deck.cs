@@ -61,13 +61,13 @@ namespace CardGames.GameLogic
 			}
 			Random rnd = new Random ();
 			//for each card (no need to shuffle last card)
-			for (int i = 0; i < 52; i++)
+			for (int j = 0; j < 52; j++)
 			{
 				//pick a random index}
-				int rndIdx = rnd.Next (52 - i);
-				Card temp = _cards [i];
-				_cards [i] = _cards [i + rndIdx];
-				_cards [i + rndIdx] = temp;
+				int rndIdx = rnd.Next (52 - j);
+				Card temp = _cards [j];
+				_cards [j] = _cards [j + rndIdx];
+				_cards [j + rndIdx] = temp;
 			}
 		}
 
