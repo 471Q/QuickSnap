@@ -46,7 +46,9 @@ namespace CardGames.GameLogic
     /// Each Card has a Rank and a Suit, and can be either face up or face down.
     /// </summary>
     public class Card
-    {
+    {/// <summary>
+    /// The rank.
+    /// </summary>
         private Rank _rank;
         private Suit _suit;
         private bool _faceUp;
